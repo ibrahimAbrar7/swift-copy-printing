@@ -83,7 +83,7 @@ const HeaderTwo: React.FC = () => {
         <div className="lg:hidden flex justify-center items-center">
           <button
             onClick={toggleMenu}
-            className="text-white ml-6 text-2xl focus:outline-none"
+            className="text-white text-2xl focus:outline-none"
           >
             {isMobileMenuOpen ? "×" : "☰"}
           </button>

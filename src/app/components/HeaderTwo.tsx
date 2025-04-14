@@ -1,85 +1,177 @@
-import React from "react";
-import Image from "next/image";
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
 
-const services = [
-  {
-    title: "Large Format Printing, Posters & Fine Art Prints",
-    image: "/one.png",
-  },
-  {
-    title: "Banners Same Day & Signs",
-    image: "/two.png",
-  },
-  {
-    title: "Window Adhesive Decals/ Wall Stickers",
-    image: "/three.png",
-  },
-  {
-    title: "Brochures, Catalogues and Booklets Printing",
-    image: "/four.png",
-  },
-  {
-    title: "Postcards, Wedding & Custom Greeting Cards",
-    image: "/five.png",
-  },
-  {
-    title: "Business Cards",
-    image: "/six.png",
-  },
-  {
-    title: "Stickers, Labels and Decals",
-    image: "/seven.png",
-  },
-  {
-    title: "Offset Printing and Other Printing",
-    image: "/eight.png",
-  },
-  {
-    title: "Custom Packaging Solutions",
-    image: "/nine.png",
-  },
-  {
-    title: "Photo Printing & Restoration",
-    image: "/ten.png",
-  },
-  {
-    title: "Promotional Products",
-    image: "/eleven.png",
-  },
-  {
-    title: "Promotional Products",
-    image: "/twe.png",
-  },
-];
+const HeaderTwo: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-const Service = () => {
+  const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
   return (
-    <section className="pb-16 pt-8 px-4 md:px-8 bg-white">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-10">
-          SERVICES WE PROVIDE
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-          {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="w-full h-[220px] relative">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  layout="fill"
-                  className="rounded shadow object-contain" // Changed to 'object-contain'
-                />
-              </div>
-              <p className="mt-4 text-md font-medium text-gray-800">
-                {service.title}
-              </p>
-            </div>
-          ))}
+    <header className="bg-gray-800 p-4 sticky top-0 z-50 border-b-1">
+      <nav>
+        <div className="hidden lg:flex justify-center space-x-6">
+          <ul className="flex">
+            <li>
+              <Link
+                href="/"
+                className="text-white text-lg font-semibold uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="text-white text-lg font-semibold uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                About
+              </Link>
+            </li>{" "}
+            <li>
+              <Link
+                href="/services"
+                className="text-white text-lg font-semibold uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/products"
+                className="text-white text-lg font-medium uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/speciality"
+                className="text-white text-lg font-semibold uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                Speciality
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/clients"
+                className="text-white text-lg font-semibold uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                Clients
+              </Link>
+            </li>{" "}
+            {/* Adjusted font size */}
+            <li>
+              <Link
+                href="/file-upload"
+                className="text-white text-lg font-semibold uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                File Upload
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="text-white text-lg font-semibold uppercase hover:text-red-400 py-4 px-5 xl:px-7"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+
+        <div className="lg:hidden flex justify-center items-center">
+          <button
+            onClick={toggleMenu}
+            className="text-white text-2xl focus:outline-none"
+          >
+            {isMobileMenuOpen ? "×" : "☰"}
+          </button>
+        </div>
+
+        <ul
+          className={`lg:hidden fixed inset-0 bg-gray-800 z-[9999] flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${
+            isMobileMenuOpen
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-full opacity-0 pointer-events-none"
+          }`}
+        >
+          {/* Close Button */}
+          <button
+            onClick={toggleMenu}
+            className="absolute top-20 right-20 text-white text-3xl font-bold"
+            aria-label="Close Menu"
+          >
+            ×
+          </button>
+          <li>
+            <Link
+              href="/"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/services"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/products"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/speciality"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              Speciality
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/clients"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              Clients
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/file-upload"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              File Upload
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className="text-white text-xl font-semibold uppercase hover:text-red-400 py-2"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
-export default Service;
+export default HeaderTwo;

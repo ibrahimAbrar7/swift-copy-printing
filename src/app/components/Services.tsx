@@ -56,7 +56,7 @@ const Service = () => {
   return (
     <section className="pb-16 pt-8 px-4 md:px-8 bg-white">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-extrabold mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold mb-10">
           SERVICES WE PROVIDE
         </h2>
 

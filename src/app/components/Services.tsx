@@ -71,7 +71,7 @@ const Service = () => {
                   className="rounded shadow object-contain" // Changed to 'object-contain'
                 />
               </div>
-              <p className="mt-4 text-md font-medium text-gray-800">
+              <p className="mt-4 text-md font-medium text-gray-800 break-words max-w-[60%] sm:max-w-full">
                 {service.title}
               </p>
             </div>

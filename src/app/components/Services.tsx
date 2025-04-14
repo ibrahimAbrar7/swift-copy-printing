@@ -1,56 +1,56 @@
 import React from "react";
 import Image from "next/image";
+
 const services = [
-    {
-      title: "Large Format Printing, Posters & Fine Art Prints",
-      image: "/one.png",
-    },
-    {
-      title: "Banners Same Day & Signs",
-      image: "/two.png",
-    },
-    {
-      title: "Window Adhesive Decals/ Wall Stickers",
-      image: "/three.png",
-    },
-    {
-      title: "Brochures, Catalogues and Booklets Printing",
-      image: "/four.png",
-    },
-    {
-      title: "Postcards, Wedding & Custom Greeting Cards",
-      image: "/five.png",
-    },
-    {
-      title: "Business Cards",
-      image: "/six.png",
-    },
-    {
-      title: "Stickers, Labels and Decals",
-      image: "/seven.png",
-    },
-    {
-      title: "Offset Printing and Other Printing",
-      image: "/eight.png",
-    },
-    {
-      title: "Custom Packaging Solutions",
-      image: "/nine.png",
-    },
-    {
-      title: "Photo Printing & Restoration",
-      image: "/ten.png",
-    },
-    {
-      title: "Promotional Products",
-      image: "/eleven.png",
-    },
-    {
-      title: "Promotional Products",
-      image: "/twe.png",
-    },
-  ];
-  
+  {
+    title: "Large Format Printing, Posters & Fine Art Prints",
+    image: "/one.png",
+  },
+  {
+    title: "Banners Same Day & Signs",
+    image: "/two.png",
+  },
+  {
+    title: "Window Adhesive Decals/ Wall Stickers",
+    image: "/three.png",
+  },
+  {
+    title: "Brochures, Catalogues and Booklets Printing",
+    image: "/four.png",
+  },
+  {
+    title: "Postcards, Wedding & Custom Greeting Cards",
+    image: "/five.png",
+  },
+  {
+    title: "Business Cards",
+    image: "/six.png",
+  },
+  {
+    title: "Stickers, Labels and Decals",
+    image: "/seven.png",
+  },
+  {
+    title: "Offset Printing and Other Printing",
+    image: "/eight.png",
+  },
+  {
+    title: "Custom Packaging Solutions",
+    image: "/nine.png",
+  },
+  {
+    title: "Photo Printing & Restoration",
+    image: "/ten.png",
+  },
+  {
+    title: "Promotional Products",
+    image: "/eleven.png",
+  },
+  {
+    title: "Promotional Products",
+    image: "/twe.png",
+  },
+];
 
 const Service = () => {
   return (
@@ -68,8 +68,7 @@ const Service = () => {
                   src={service.image}
                   alt={service.title}
                   layout="fill"
-                  objectFit="cover"
-                  className="rounded shadow"
+                  className="rounded shadow object-contain" // Changed to 'object-contain'
                 />
               </div>
               <p className="mt-4 text-md font-medium text-gray-800">

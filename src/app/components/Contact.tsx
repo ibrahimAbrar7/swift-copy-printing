@@ -57,20 +57,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-
-        {/* Google Map */}
-        <div className="mt-10 text-center">
-          <h2 className="text-xl font-semibold mb-4">Google Map</h2>
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3594.4715366928126!2d-73.98230765680418!3d40.7493053249779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590662a3f215%3A0x85ef044f7f0ac5af!2sSwift%20Copy%20Printing!5e0!3m2!1sen!2sus!4v1744633071408!5m2!1sen!2sus"
-            width="100%"
-            height="300"
-            allowFullScreen
-            loading="lazy"
-            className="rounded shadow"
-          ></iframe>
-        </div>
       </div>
     </div>
   );

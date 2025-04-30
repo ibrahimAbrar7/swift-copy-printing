@@ -8,7 +8,7 @@ const HeaderTwo: React.FC = () => {
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="bg-gray-800 p-4 sticky top-0 z-50 border-b-1">
+    <header className="bg-zinc-800 dark:bg-gray-800 p-4 sticky top-0 z-50 border-b-1 dark:border-gray-400">
       <nav>
         <div className="hidden lg:flex justify-center space-x-6">
           <ul className="flex">
@@ -90,12 +90,13 @@ const HeaderTwo: React.FC = () => {
         </div>
 
         <ul
-          className={`lg:hidden fixed inset-0 bg-gray-800 z-[9999] flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${
-            isMobileMenuOpen
-              ? "translate-y-0 opacity-100"
-              : "-translate-y-full opacity-0 pointer-events-none"
-          }`}
-        >
+  className={`lg:hidden fixed inset-0 bg-gray-800 z-[9999] flex flex-col items-center justify-center space-y-4 transition-transform duration-500 ease-in-out ${
+    isMobileMenuOpen
+      ? "translate-y-0 opacity-100"
+      : "-translate-y-full opacity-0 pointer-events-none"
+  }`}
+>
+
           {/* Close Button */}
           <button
             onClick={toggleMenu}

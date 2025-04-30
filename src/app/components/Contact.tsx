@@ -3,12 +3,12 @@ import { FaClock, FaFacebook, FaInstagram, FaMailBulk, FaPhone } from "react-ico
 
 const Contact = () => {
   return (
-    <div className="bg-white min-h-screen px-4 py-16">
+    <div className="bg-white dark:bg-gray-800 px-4 py-16">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 bg-gray-50 p-6 rounded-lg shadow">
+        <div className="grid md:grid-cols-2 gap-8 bg-gray-50 dark:bg-[#0f172a] p-6 rounded-lg shadow">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-700 dark:text-gray-300">
               <p><strong><FaPhone className="inline mr-2"/></strong> 212-683-4900</p>
               <p><strong><FaClock className="inline mr-2"/></strong> <span className="font-semibold">Office Hours</span><br />
                 Monday - Friday: 9:00 am to 5:00 pm<br />

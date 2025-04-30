@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="relative py-16 px-4 md:px-8 bg-white overflow-hidden">
+    <section className="relative py-16 px-4 md:px-8 bg-white dark:bg-[#0f172a] overflow-hidden">
       <div className="absolute top-0 left-0 z-0 max-w-[60px] md:max-w-[100px] lg:max-w-[200px]">
         <Image
           src="/bg-left.png"
@@ -24,12 +24,12 @@ const About = () => {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="text-xl font-medium text-gray-900">Welcome to</h2>
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+        <h2 className="text-xl font-medium text-gray-900 dark:text-gray-200">Welcome to</h2>
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-gray-200">
           SWIFT COPY PRINTING
         </h1>
 
-        <p className="text-gray-500 text-xl leading-loose flex justify-center mb-6">
+        <p className="text-gray-500 dark:text-gray-200 text-xl leading-loose flex justify-center mb-6">
           We pride ourselves on being one of the most experienced and
           professional digital printers in Mid-Manhattan New York. Since 1990 we
           have been utilizing the latest technology, processing, and printing
@@ -39,7 +39,7 @@ const About = () => {
           comprehensive range of print finishing options.
         </p>
 
-        <p className="text-red-700 italic text-lg">
+        <p className="text-red-700 dark:text-red-400 italic text-lg">
           As one of the city’s most reliable and quick turnover printers,
           <br />
           we also offer rush & same-day services

@@ -31,10 +31,10 @@ const clients = [
 
 const Clients = () => {
   return (
-    <section className="bg-white py-12 px-6">
+    <section className="bg-white dark:bg-gray-800 py-12 px-6">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-2">Clients</h2>
-        <p className="text-gray-600 mb-8">Our Valuable Clients</p>
+        <p className="text-gray-600 dark:text-gray-200 mb-8">Our Valuable Clients</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {clients.map((client, index) => (

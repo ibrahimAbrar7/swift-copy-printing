@@ -4,12 +4,14 @@ import Footer from "../components/Footer";
 import HeaderOne from "../components/HeaderOne";
 import HeaderTwo from "../components/HeaderTwo";
 import BackToTop from "../components/BackToTop";
+import ThemeToggle from "../components/ThemeToggle";
 export default function AboutPage() {
   return (
     <>
     <HeaderOne />
     <HeaderTwo /> 
-    <Breadcrumb title="PRODUCTS" />
+        <ThemeToggle />
+        <Breadcrumb title="PRODUCTS" />
     <Products />
     <Footer />
     <BackToTop />

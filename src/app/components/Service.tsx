@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Service = () => {
   return (
-    <section className="relative py-16 px-4 md:px-8 bg-white overflow-hidden">
+    <section className="relative py-16 px-4 md:px-8 bg-white dark:bg-gray-800 overflow-hidden">
       {/* Corner Images */}
       <div className="absolute top-0 left-0 z-0 max-w-[120px] md:max-w-[200px]">
         <Image
@@ -26,12 +26,12 @@ const Service = () => {
 
       {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-2">
+        <h1 className="text-2xl md:text-5xl font-extrabold text-gray-900 dark:text-gray-200 mb-2">
           Services
         </h1>
-        <p className="text-gray-600 mb-10">Our full-service list</p>
+        <p className="text-gray-600 mb-10 dark:text-gray-200">List</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left text-gray-800">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left text-gray-800 dark:text-gray-200">
           {/* Column 1 */}
           <ul className="space-y-2">
             <li>A-Frame Economy Metal A-Frame</li>

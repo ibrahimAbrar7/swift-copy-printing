@@ -54,7 +54,7 @@ const services = [
 
 const Service = () => {
   return (
-    <section className="pb-16 pt-8 px-4 md:px-8 bg-white">
+    <section className="pb-16 pt-12 px-4 md:px-8 bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-10">
           SERVICES WE PROVIDE
@@ -71,7 +71,7 @@ const Service = () => {
                   className="rounded shadow object-contain" // Changed to 'object-contain'
                 />
               </div>
-              <p className="mt-4 text-md font-medium text-gray-800 break-words max-w-[60%] sm:max-w-full">
+              <p className="mt-4 text-md font-medium text-gray-800 dark:text-gray-200 break-words max-w-[60%] sm:max-w-full">
                 {service.title}
               </p>
             </div>

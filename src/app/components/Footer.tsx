@@ -7,7 +7,7 @@ import { MdEmail, MdAccessTime } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-800 text-white text-sm py-10 px-4 sm:px-8">
+    <footer className="bg-zinc-800 dark:bg-[#0f172a] text-white text-sm py-10 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {/* Column 1: Google Map */}
         <div className="w-full">

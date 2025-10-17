@@ -15,7 +15,7 @@ export default function HeaderOne() {
             alt="Swift Copy Printing"
             width={500}
             height={200}
-            className="h-16 xl:h-24 w-auto object-contain" style={{ borderRadius: '20px' }}
+            className="h-16 xl:h-24 w-auto object-contain rounded-sm" style={{ borderRadius: '20px' }}
           />
         </div>
 
